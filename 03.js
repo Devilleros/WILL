@@ -14,7 +14,13 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  var x={};
+  amigos.forEach(a => {
+    if(a.nombre === nombre){
+      x = a;
+    }
+  });
+  return x;
 }
 
 // No modifiques nada debajo de esta linea //
